@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iraa's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--connection of css file with html -->
+    <script
+      src="https://kit.fontawesome.com/5358c57903.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Mylogo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hello, I'm <span>Iramnaaz</span> Pansare<br />
+            from Pune.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <script>
+  let tablinks = document.getElementsByClassName("tab-links");
+  let tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+    <!-----------------------------------------about-------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/AboutImage.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am a passionate full-stack developer who enjoys building scalable and user-friendly web applications. My expertise lies in using React.js to craft interactive frontends, while leveraging .NET Core Web API with C# to develop robust backends. I also work extensively with SQL Server to design and manage efficient databases. I thrive on solving problems, learning new technologies, and turning ideas into real-world applications.
+            </p>
+            <p></p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experiences')">
+                Experiences
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming languages : </span><br />C# , Java</li>
+                <li>
+                  <span>Frameworks and Backend : </span><br />ASP.NET Core, .NET
+                  Core Web Api
+                </li>
+                <li><span>Frontend Technologies :</span><br />React.js</li>
+                <li>
+                  <span>Database Management : </span><br />SQL Server, MySQL
+                </li>
+                 <li>
+                  <span>Other skills : </span><br />REST API development,Entity Framework, LINQ, AJAX,JavaScript,HTML5,CSS3,Bootstrap,GIT
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Post Graduation diploma in Advanced Computing</span><br /> PG-DAC,ACTS,Pune 
+                </li>
+                <li>
+                  <span>B.E. Graduate</span><br />Trinity College of Engineering and Research,Pune
+                </li>
+                <li>
+                  <span>Higher School Certification</span><br />Purandar Public School
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+              <ul>
+              
+                <li>
+                  <span>Freelancing with upwork</span><br />Building Web Applications using React.js,C# and SQL server
+                </li>
+                <li><span>Extras</span><br />Event-Anchor/host</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------Services------------------------------------------------------>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i><br />
+            <h2>Quiz Application</h2>
+            <p>
+              This ReactJS Quiz Application employs controlled components and
+              conditional rendering to offer a seamless user experience. at the
+              end of the quiz score is generated
+            </p>
+            <a href="https://bejewelled-otter-5935ea.netlify.app"
+              ><big>Click here to view this project </big>
+            </a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-laptop-code"></i><br />
+            <h2>Calculator</h2>
+            <p>
+              I created a basic calculator using HTML,CSS, JavaScript.where You
+              can perform arithmetic operations like Modulus ,addition,
+              division, subtraction and multiplication.
+            </p>
+            <a href="https://animated-bunny-f48d67.netlify.app"
+              ><big>Click here to view this project</big></a
+            >
+          </div>
+
+          <div>
+            <i class="fa-brands fa-codepen"></i><br />
+            <h2>Portfolio</h2>
+            <p>
+              I created my Portfolio using HTML5 , CSS and JavaScript. at the
+              end of my website I created a contact form including it's
+              validation . This is a completely responsive website.
+            </p>
+            <a href="#"><big>Click here to view this project</big></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------portfolio--------------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list"> 
+          <div class="work">
+            <img src="images/person5.jpeg" />
+             <div class="image-caption">Tap on my image to see more</div>
+            <div class="layer">
+              <h2>Cdac_Certificate</h2>
+              <p>Click on the link below to see my Cdac-Certificate</p>
+              <a href="images/CDAC_Certificate.jpg"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/person7.JPG" />
+            <div class="image-caption">Tap on my image to see more</div>
+            <div class="layer">
+              <h2>CDAC_Marksheet</h2>
+              <p>Click on the link below to see my Cdac-Marksheet</p>
+              <a href="images/CDAC_Marksheet.jpg"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/person3.jpeg" />
+            <div class="image-caption">Tap on my image to see more</div>
+            <div class="layer">
+              <h2>Project</h2>
+              <p>
+               Learning management system : 
+                : Developed a robust and scalable 
+                  Learning Management System  using C#,ASP.NET core Web API, React.js to manage employee
+                  training programs, course modules, and assessments. Designed and implemented RESTful APIs using .NET
+                  Core Web API for user management, course
+                  scheduling, and progress tracking. Created dynamic and responsive UI using React js with custom
+                  components. Optimized complex queries and stored
+                  procedures in SQL Server for real-time reporting and
+                  analytics. 
+              </p>
+              <a href="This_project_is_still_in_progress..."
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <!-------------------------------contact------------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>iramnaazpansare2211@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>******0051</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100009502183811"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Irapansare11"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/cod_instag_ram/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ira-pansare2211"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Resume_for_Portfolio.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+        <div class="contact-right">
+  <form name="submit-to-google-sheet">
+    <input type="text" name="Name" placeholder="Your Name" required />
+    <input type="email" name="Email" placeholder="Your Email" required />
+    <textarea
+      name="Message"
+      rows="7"
+      placeholder="Please mention Your Precious feedback here..."
+      required
+    ></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+  </form>
+  <span id="msg"></span>
+</div>
+
+<div class="copyright">
+  <p>Copyright © made by Iramnaaz Pansare</p>
+</div>
+
+<script>
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxplLPT0GiyWjdeliQSAXwm7s-R8qNAqczVIsOdKpavQ0To-I59K6o6jmOVUNMHbDZGYA/exec";
+  const form = document.forms["submit-to-google-sheet"];
+  const msg = document.getElementById("msg");
+  const btn = form.querySelector("button");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // ✅ Right here: disable and show spinner immediately
+    btn.disabled = true;
+    btn.innerHTML = 'Submitting <span class="loading"></span>';
+    msg.innerHTML = "Sending your message... please wait.";
+
+    // Send form data to Google Apps Script
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then(() => {
+        msg.innerHTML = "✅ Message sent successfully!";
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        msg.innerHTML = "❌ There was an error submitting the form.";
+      })
+      .finally(() => {
+        // Restore button and clear message after 3 seconds
+        setTimeout(() => {
+          msg.innerHTML = "";
+          btn.disabled = false;
+          btn.innerHTML = "Submit"; // 👈 Button text back to normal
+        }, 3000);
+      });
+  });
+</script>
+
+
+
+    </script>
+  </body>
+</html>
