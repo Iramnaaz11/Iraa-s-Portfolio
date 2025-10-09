@@ -372,6 +372,9 @@ nav .fa-solid {
     z-index: 2;
     transition: right 0.5s;
   }
+   nav ul {
+  background: rgba(214, 8, 70, 0.6); /* 0.6 = 60% opaque */
+}
   .logo {
     margin-left: -20px;
     width: 200px;
